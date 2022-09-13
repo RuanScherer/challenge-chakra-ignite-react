@@ -9,7 +9,7 @@ export function Banner() {
       bgSize="cover"
       width="full"
       py={[4, 8, 20]}
-      px={[12, 20, 36]}
+      px={[4, 20, 36]}
     >
       <Box
         maxWidth="900px"

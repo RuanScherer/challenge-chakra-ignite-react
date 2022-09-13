@@ -3,7 +3,7 @@ import { CategoryItem } from "./CategoryItem";
 
 export function CategoriesList() {
   return (
-    <Box px={[12, 20, 36]}>
+    <Box px={[4, 20, 36]}>
       <List
         display="flex"
         alignItems="center"
