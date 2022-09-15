@@ -14,7 +14,7 @@ export function SelectorSlide({ imageUrl, title, description }: SelectorSlidePro
       bgSize="cover"
       bgPosition="center"
       width="full"
-      height="450px"
+      height={["250px", "450px"]}
       p={2}
       flexDirection="column"
       cursor="pointer"

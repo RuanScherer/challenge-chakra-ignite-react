@@ -7,7 +7,7 @@ import { ContinentSelector } from "../components/Home/ContinentSelector"
 
 const Home: NextPage = () => {
   return (
-    <Box minHeight="100vh">
+    <Box minHeight="100vh" bgColor="light.500">
       <Header />
       <Banner />
 

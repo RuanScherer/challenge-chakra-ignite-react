@@ -15,6 +15,7 @@ const colors = {
     900: "#FFFFFF"
   },
   dark: {
+    200: "#999999",
     500: "#47585B"
   },
   highlight: {

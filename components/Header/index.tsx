@@ -16,6 +16,7 @@ export function Header() {
         {route !== "/" &&
           <Button
             variant="ghost"
+            size="sm"
             onClick={back}
             title="Voltar"
             p={1}
