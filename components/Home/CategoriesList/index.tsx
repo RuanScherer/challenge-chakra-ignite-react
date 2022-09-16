@@ -14,27 +14,27 @@ export function CategoriesList() {
         mx="auto"
       >
         <CategoryItem
-          imageSrc="cocktail.svg"
+          imageSrc="categories/cocktail.svg"
           imageAltText="Copo de coquetel"
           label="vida noturna"
         />
         <CategoryItem
-          imageSrc="surf.svg"
+          imageSrc="categories/surf.svg"
           imageAltText="Prancha de surf e sol"
           label="praia"
         />
         <CategoryItem
-          imageSrc="building.svg"
+          imageSrc="categories/building.svg"
           imageAltText="Prédio"
           label="moderno"
         />
         <CategoryItem
-          imageSrc="museum.svg"
+          imageSrc="categories/museum.svg"
           imageAltText="Museu"
           label="clássico"
         />
         <CategoryItem
-          imageSrc="earth.svg"
+          imageSrc="categories/earth.svg"
           imageAltText="Mundo"
           label="e mais..."
         />

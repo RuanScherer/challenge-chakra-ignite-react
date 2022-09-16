@@ -1,10 +1,32 @@
 import { Box, Flex, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { NextPage } from "next";
-import { CityCard } from "../components/Continent/CityCard";
-import { ContinentInsigths } from "../components/Continent/ContinentInsights";
-import { Header } from "../components/Header";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { CityCard } from "../../components/Continent/CityCard";
+import { ContinentInsigths } from "../../components/Continent/ContinentInsights";
+import { Header } from "../../components/Header";
+
+interface Continent {
+  id: number
+  name: string
+  imageUrl: string
+  description: string
+}
 
 const Continent: NextPage = () => {
+  const [continent, setContinent] = useState<Continent>()
+  const router = useRouter()
+  const { continentId } = router.query
+
+  useEffect(() => {
+    fetch(`loclahost:3333/continents/${continentId}`)
+      .then(response => response.json())
+      .then(setContinent)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [router.query])
+
+  if (!continent) return null
+
   return (
     <Box minHeight="100vh" bgColor="light.500">
       <Header />
@@ -12,7 +34,7 @@ const Continent: NextPage = () => {
       <Flex
         flexDirection="column"
         justifyContent="flex-end"
-        bgImage={"/europe.svg"}
+        bgImage={continent?.imageUrl}
         bgRepeat="no-repeat"
         bgPosition="center"
         bgSize="cover"
@@ -24,7 +46,7 @@ const Continent: NextPage = () => {
       >
         <Box width="full" maxWidth="900px" mx="auto">
           <Heading fontSize={[28, 48]} fontWeight="semibold" color="light.500">
-            Europa
+            {continent?.name}
           </Heading>
         </Box>
       </Flex>
@@ -41,10 +63,7 @@ const Continent: NextPage = () => {
             textAlign="justify"
             color="dark.500"
           >
-            A Europa é, por convenção, um dos seis continentes do mundo.
-            Compreendendo a península ocidental da Eurásia, a Europa geralmente
-            divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
-            rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
+            {continent?.description}
           </Text>
           
           <ContinentInsigths
@@ -79,9 +98,23 @@ const Continent: NextPage = () => {
             spacing={12}
           >
             <CityCard
-              imageUrl="/europe.svg"
+              imageUrl="/continents/europe.svg"
               cityName="Londres"
               country="Reino Unido"
+              countryFlagImageUrl="/"
+            />
+
+            <CityCard
+              imageUrl="/continents/europe.svg"
+              cityName="Roma"
+              country="Itália"
+              countryFlagImageUrl="/"
+            />
+
+            <CityCard
+              imageUrl="/continents/europe.svg"
+              cityName="Dublin"
+              country="Irlanda"
               countryFlagImageUrl="/"
             />
           </SimpleGrid>

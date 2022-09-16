@@ -3,7 +3,7 @@ import { Box, Heading, Image, Text } from "@chakra-ui/react";
 export function Banner() {
   return (
     <Box
-      bgImage="url('/home-banner-background.svg')"
+      bgImage="url('/home/home-banner-background.svg')"
       bgRepeat="no-repeat"
       bgPosition="center"
       bgSize="cover"
@@ -36,7 +36,7 @@ export function Banner() {
         </Box>
         
         <Image
-          src="/airplane.svg"
+          src="/home/airplane.svg"
           position="absolute"
           transform="rotate(3deg)"
           right="-1rem"

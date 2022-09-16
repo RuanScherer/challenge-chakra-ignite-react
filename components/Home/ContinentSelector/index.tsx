@@ -13,7 +13,7 @@ export function ContinentSelector() {
       >
         <SwiperSlide>
           <SelectorSlide
-            imageUrl="/europe.svg"
+            imageUrl="/continents/europe.svg"
             title="Europa"
             description="O continente mais antigo."
           />
@@ -21,7 +21,7 @@ export function ContinentSelector() {
         
         <SwiperSlide>
           <SelectorSlide
-            imageUrl="/south-america.svg"
+            imageUrl="/continents/south-america.svg"
             title="América do Sul"
             description="Um continente rico em cultura."
           />
@@ -29,7 +29,7 @@ export function ContinentSelector() {
         
         <SwiperSlide>
           <SelectorSlide
-            imageUrl="/north-america.svg"
+            imageUrl="/continents/north-america.svg"
             title="América do Norte"
             description="Terra das cidades mais famosas."
           />
@@ -37,7 +37,7 @@ export function ContinentSelector() {
 
         <SwiperSlide>
           <SelectorSlide
-            imageUrl="/asia.svg"
+            imageUrl="/continents/asia.svg"
             title="Ásia"
             description="Conheça a cultura oriental."
           />
@@ -45,7 +45,7 @@ export function ContinentSelector() {
 
         <SwiperSlide>
           <SelectorSlide
-            imageUrl="/africa.svg"
+            imageUrl="/continents/africa.svg"
             title="África"
             description="Um dos maiores continentes."
           />
@@ -53,7 +53,7 @@ export function ContinentSelector() {
 
         <SwiperSlide>
           <SelectorSlide
-            imageUrl="/oceania.svg"
+            imageUrl="/continents/oceania.svg"
             title="Oceania"
             description="Conheça as mais diferentes ilhas."
           />

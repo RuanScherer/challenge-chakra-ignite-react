@@ -1,0 +1,40 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "imageUrl": "/continents/europe.svg",
+      "description": "O continente mais antigo"
+    },
+    {
+      "id": 2,
+      "name": "América do Sul",
+      "imageUrl": "/continents/south-america.svg",
+      "description": "Um continente rico em cultura"
+    },
+    {
+      "id": 3,
+      "name": "América do Norte",
+      "imageUrl": "/continents/north-america.svg",
+      "description": "Terra das cidades mais famosas"
+    },
+    {
+      "id": 4,
+      "name": "Ásia",
+      "imageUrl": "/continents/asia.svg",
+      "description": "Conheça a cultura oriental"
+    },
+    {
+      "id": 5,
+      "name": "África",
+      "imageUrl": "/continents/africa.svg",
+      "description": "Um dos maiores continentes"
+    },
+    {
+      "id": 6,
+      "name": "Oceania",
+      "imageUrl": "/continents/oceania.svg",
+      "description": "Conheça as mais diferentes ilhas"
+    }
+  ]
+}
