@@ -1,4 +1,4 @@
-import { Box, Divider, Heading, Stack } from "@chakra-ui/react"
+import { Box, Divider, Heading, Stack, Text } from "@chakra-ui/react"
 import type { NextPage } from 'next'
 import { useRouter } from "next/router"
 import { Header } from "../components/Header"
@@ -36,18 +36,28 @@ const Home: NextPage = () => {
           maxWidth="900px"
           mx="auto"
         >
-          <Heading
-            as="h2"
-            fontSize={[20, 20, 36]}
-            fontWeight="medium"
-            textAlign="center"
-            color="dark.500"
-            px={[4, 0]}
-          >
-            Vamos nessa?
-            <br />
-            Então escolha seu continente
-          </Heading>
+          <Box>
+            <Heading
+              as="h2"
+              fontSize={[20, 20, 36]}
+              fontWeight="medium"
+              textAlign="center"
+              color="dark.500"
+              px={[4, 0]}
+            >
+              Vamos nessa?
+              <br />
+              Então escolha seu continente
+            </Heading>
+
+            <Text
+              fontWeight="light"
+              textAlign="center"
+              color="gray.400"
+            >
+              Deslize para ver mais
+            </Text>
+          </Box>
 
           <ContinentSelector onSelect={onContinentSelected} />
         </Stack>
