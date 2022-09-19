@@ -3,38 +3,252 @@
     {
       "id": 1,
       "name": "Europa",
+      "slug": "europe",
       "imageUrl": "/continents/europe.svg",
-      "description": "O continente mais antigo"
+      "description": "O continente mais antigo",
+      "aboutText": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.",
+      "insights": {
+        "countries": 50,
+        "languages": 67,
+        "cities": 27
+      },
+      "cities": [
+        {
+          "name": "Londres",
+          "imageUrl": "/cities/london.jpg",
+          "country": {
+            "name": "Reino Unido",
+            "imageUrl": "https://countryflagsapi.com/png/GB"
+          }
+        },
+        {
+          "name": "Amsterdã",
+          "imageUrl": "/cities/amsterdam.jpg",
+          "country": {
+            "name": "Holanda",
+            "imageUrl": "https://countryflagsapi.com/png/NL"
+          }
+        },
+        {
+          "name": "Lisboa",
+          "imageUrl": "/cities/lisbon.jpg",
+          "country": {
+            "name": "Portugal",
+            "imageUrl": "https://countryflagsapi.com/png/PT"
+          }
+        },
+        {
+          "name": "Paris",
+          "imageUrl": "/cities/paris.jpg",
+          "country": {
+            "name": "França",
+            "imageUrl": "https://countryflagsapi.com/png/FR"
+          }
+        },
+        {
+          "name": "Roma",
+          "imageUrl": "/cities/roma.jpg",
+          "country": {
+            "name": "Itália",
+            "imageUrl": "https://countryflagsapi.com/png/IT"
+          }
+        }
+      ]
     },
     {
       "id": 2,
       "name": "América do Sul",
+      "slug": "south-america",
       "imageUrl": "/continents/south-america.svg",
-      "description": "Um continente rico em cultura"
+      "description": "Um continente rico em cultura",
+      "aboutText": "A América do Sul é um dos subcontinentes que formam a América. Ela é composta por 12 países que foram colonizados, proritariamente, por portugueses e espanhóis. A população sul-americana é compostada por descendentes de povos indígenas, europeus e africanos, que contribuíram diretamente para a formação das sociedades locais.",
+      "insights": {
+        "countries": 12,
+        "languages": 10,
+        "cities": 6
+      },
+      "cities": [
+        {
+          "name": "Rio de Janeiro",
+          "imageUrl": "/cities/rio-de-janeiro.jpg",
+          "country": {
+            "name": "Brasil",
+            "imageUrl": "https://countryflagsapi.com/png/BR"
+          }
+        },
+        {
+          "name": "Santiago",
+          "imageUrl": "/cities/santiago.jpg",
+          "country": {
+            "name": "Chile",
+            "imageUrl": "https://countryflagsapi.com/png/CL"
+          }
+        },
+        {
+          "name": "Montevidéu",
+          "imageUrl": "/cities/montevideu.jpg",
+          "country": {
+            "name": "Uruguai",
+            "imageUrl": "https://countryflagsapi.com/png/UY"
+          }
+        }
+      ]
     },
     {
       "id": 3,
       "name": "América do Norte",
+      "slug": "north-america",
       "imageUrl": "/continents/north-america.svg",
-      "description": "Terra das cidades mais famosas"
+      "description": "Terra das cidades mais famosas",
+      "aboutText": "A América do Norte está localizada no extremo norte das Américas e é composta por apenas três países: Estados Unidos, Canadá e México, além de territórios de domínios europeus, como a Groelândia (pertencente ao Reino da Dinamarca, com representação no parlamento) e Bermudas (dependência britânica).",
+      "insights": {
+        "countries": 3,
+        "languages": 5,
+        "cities": 10
+      },
+      "cities": [
+        {
+          "name": "Toronto",
+          "imageUrl": "/cities/toronto.jpg",
+          "country": {
+            "name": "Canadá",
+            "imageUrl": "https://countryflagsapi.com/png/CA"
+          }
+        },
+        {
+          "name": "Orlando",
+          "imageUrl": "/cities/orlando.jpg",
+          "country": {
+            "name": "Estados Unidos",
+            "imageUrl": "https://countryflagsapi.com/png/US"
+          }
+        },
+        {
+          "name": "Cancun",
+          "imageUrl": "/cities/cancun.jpg",
+          "country": {
+            "name": "México",
+            "imageUrl": "https://countryflagsapi.com/png/MX"
+          }
+        },
+        {
+          "name": "Nassau",
+          "imageUrl": "/cities/nassau.jpg",
+          "country": {
+            "name": "Bahamas",
+            "imageUrl": "https://countryflagsapi.com/png/BS"
+          }
+        }
+      ]
     },
     {
       "id": 4,
       "name": "Ásia",
+      "slug": "asia",
       "imageUrl": "/continents/asia.svg",
-      "description": "Conheça a cultura oriental"
+      "description": "Conheça a cultura oriental",
+      "aboutText": "A Ásia é o maior continente em área terrestre do mundo, estando boa parte do continente localizado no Hemisfério Norte. Além de ser o mais extenso, é também o mais populoso, habitando nele cerca de três quintos da população mundial. A Ásia é multicultural, abrigando diversas culturas, etnias, religiões e tradições.",
+      "insights": {
+        "countries": 49,
+        "languages": 8,
+        "cities": 5
+      },
+      "cities": [
+        {
+          "name": "Tóquio",
+          "imageUrl": "/cities/tokyo.jpg",
+          "country": {
+            "name": "Japão",
+            "imageUrl": "https://countryflagsapi.com/png/JP"
+          }
+        },
+        {
+          "name": "Pequim",
+          "imageUrl": "/cities/pekin.jpg",
+          "country": {
+            "name": "China",
+            "imageUrl": "https://countryflagsapi.com/png/CN"
+          }
+        },
+        {
+          "name": "Seul",
+          "imageUrl": "/cities/seoul.jpg",
+          "country": {
+            "name": "Coréia do Sul",
+            "imageUrl": "https://countryflagsapi.com/png/KR"
+          }
+        }
+      ]
     },
     {
       "id": 5,
       "name": "África",
+      "slug": "africa",
       "imageUrl": "/continents/africa.svg",
-      "description": "Um dos maiores continentes"
+      "description": "Um dos maiores continentes",
+      "aboutText": "A África é conhecida pela sua pluralidade étnica e cultural, e, por meio de uma história milenar, é capaz de contar a história de toda a humanidade.",
+      "insights": {
+        "countries": 54,
+        "languages": 50,
+        "cities": 7
+      },
+      "cities": [
+        {
+          "name": "Cidade do Cabo",
+          "imageUrl": "/cities/cape-town.jpg",
+          "country": {
+            "name": "África do Sul",
+            "imageUrl": "https://countryflagsapi.com/png/ZA"
+          }
+        },
+        {
+          "name": "Antananarivo",
+          "imageUrl": "/cities/antananarivo.jpg",
+          "country": {
+            "name": "Madagascar",
+            "imageUrl": "https://countryflagsapi.com/png/MG"
+          }
+        }
+      ]
     },
     {
       "id": 6,
       "name": "Oceania",
+      "slug": "oceania",
       "imageUrl": "/continents/oceania.svg",
-      "description": "Conheça as mais diferentes ilhas"
+      "description": "Conheça as mais diferentes ilhas",
+      "aboutText": "É composto por 14 países e ilhas e territórios pertencentes a outros países, tanto oceânicos quanto de outros continentes. A maior e mais populosa das nações é a Austrália, que consiste também na principal economia do continente.",
+      "insights": {
+        "countries": 14,
+        "languages": 9,
+        "cities": 4
+      },
+      "cities": [
+        {
+          "name": "Sydney",
+          "imageUrl": "/cities/sydney.jpg",
+          "country": {
+            "name": "Austrália",
+            "imageUrl": "https://countryflagsapi.com/png/AU"
+          }
+        },
+        {
+          "name": "Melbourne",
+          "imageUrl": "/cities/melbourne.jpg",
+          "country": {
+            "name": "Austrália",
+            "imageUrl": "https://countryflagsapi.com/png/AU"
+          }
+        },
+        {
+          "name": "Auckland",
+          "imageUrl": "/cities/auckland.jpg",
+          "country": {
+            "name": "Nova Zelândia",
+            "imageUrl": "https://countryflagsapi.com/png/NZ"
+          }
+        }
+      ]
     }
   ]
 }

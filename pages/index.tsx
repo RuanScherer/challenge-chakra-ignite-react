@@ -1,11 +1,18 @@
 import { Box, Divider, Heading, Stack } from "@chakra-ui/react"
 import type { NextPage } from 'next'
+import { useRouter } from "next/router"
 import { Header } from "../components/Header"
 import { Banner } from "../components/Home/Banner"
 import { CategoriesList } from "../components/Home/CategoriesList"
 import { ContinentSelector } from "../components/Home/ContinentSelector"
 
 const Home: NextPage = () => {
+  const router = useRouter()
+
+  function onContinentSelected(selectedContinentSlug: string) {
+    router.push(`/continent/${selectedContinentSlug}`)
+  }
+
   return (
     <Box minHeight="100vh" bgColor="light.500">
       <Header />
@@ -42,7 +49,7 @@ const Home: NextPage = () => {
             Então escolha seu continente
           </Heading>
 
-          <ContinentSelector />
+          <ContinentSelector onSelect={onContinentSelected} />
         </Stack>
       </Box>
     </Box>

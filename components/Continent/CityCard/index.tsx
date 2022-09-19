@@ -52,7 +52,7 @@ export function CityCard({ imageUrl, cityName, country, countryFlagImageUrl }: C
         </Box>
 
         <Box
-          bgImage={imageUrl}
+          bgImage={countryFlagImageUrl}
           bgRepeat="no-repeat"
           bgPosition="center"
           bgSize="cover"

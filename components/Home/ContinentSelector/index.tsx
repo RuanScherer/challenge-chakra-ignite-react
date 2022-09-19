@@ -3,7 +3,11 @@ import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { SelectorSlide } from "./SelectorSlide"
 
-export function ContinentSelector() {
+interface ContinentSelectorProps {
+  onSelect: (selectedContinentSlug: string) => any
+}
+
+export function ContinentSelector({ onSelect }: ContinentSelectorProps) {
   return (
     <Box width="full">
       <Swiper
@@ -11,7 +15,7 @@ export function ContinentSelector() {
         slidesPerView={1}
         loop
       >
-        <SwiperSlide>
+        <SwiperSlide onClick={() => onSelect("europe")}>
           <SelectorSlide
             imageUrl="/continents/europe.svg"
             title="Europa"
@@ -19,7 +23,7 @@ export function ContinentSelector() {
           />
         </SwiperSlide>
         
-        <SwiperSlide>
+        <SwiperSlide onClick={() => onSelect("south-america")}>
           <SelectorSlide
             imageUrl="/continents/south-america.svg"
             title="América do Sul"
@@ -27,7 +31,7 @@ export function ContinentSelector() {
           />
         </SwiperSlide>
         
-        <SwiperSlide>
+        <SwiperSlide onClick={() => onSelect("north-america")}>
           <SelectorSlide
             imageUrl="/continents/north-america.svg"
             title="América do Norte"
@@ -35,7 +39,7 @@ export function ContinentSelector() {
           />
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => onSelect("asia")}>
           <SelectorSlide
             imageUrl="/continents/asia.svg"
             title="Ásia"
@@ -43,7 +47,7 @@ export function ContinentSelector() {
           />
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => onSelect("africa")}>
           <SelectorSlide
             imageUrl="/continents/africa.svg"
             title="África"
@@ -51,7 +55,7 @@ export function ContinentSelector() {
           />
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => onSelect("oceania")}>
           <SelectorSlide
             imageUrl="/continents/oceania.svg"
             title="Oceania"
